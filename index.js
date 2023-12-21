@@ -128,7 +128,7 @@ const ReproduzirVoz = (resposta) => {
   myHeaders.append("X-Microsoft-OutputFormat", "audio-16khz-128kbitrate-mono-mp3");
   myHeaders.append("User-Agent", "curl");
 
-  var raw = "<speak version='1.0' xml:lang='pt-BR'>\r\n    <voice xml:lang='pt-BR' xml:gender='male' name='pt-BR-NicolauNeural'>\r\n  " + resposta + "\r\n    </voice>\r\n</speak>";
+  var raw = "<speak version='1.0' xml:lang='pt-BR'>\r\n    <voice xml:lang='pt-BR' xml:gender='Female' name='pt-BR-FranciscaNeural'>\r\n  " + resposta + "\r\n    </voice>\r\n</speak>";
 
   var requestOptions = {
     method: 'POST',
